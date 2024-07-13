@@ -1,0 +1,318 @@
+body {
+    font-family: 'time new roman';
+    background: peru;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 10vw;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-size: 1.5vw;
+}
+.ken {
+    background-color:peru;
+    color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: auto;
+    max-width: 450px;
+    box-sizing: border-box;
+    text-align: center
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.text-content {
+    width: 40%;
+    /* Adjusted width */
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 100%;
+    /* Full height */
+}
+
+.text-content .highlight {
+    color: #8fb9ff;
+}
+
+.character {
+    height: 70vh;
+    /* Full height relative to viewport height */
+    width: auto;
+}
+
+h1 {
+    font-size: 2vw;
+    /* Use relative units */
+    margin: 0;
+    color: #fff;
+    font-family: 'times new roman', cursive;
+    /* Apply Google Font */
+    line-height: 1.5;
+    /* Line height for spacing between lines */
+    letter-spacing: 1px;
+    /* Letter spacing */
+}
+
+.h1 .highlight {
+    color: #8fb9ff;
+}
+
+.contract-address {
+    background-color:peru;
+    color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: auto;
+    max-width: 450px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    text-align: center
+}
+
+.contract-address span {
+    font-size: 19px;
+    /* Use relative units */
+    word-break: break-all;
+    /* Ensure the address breaks into the next line if it's too long */
+}
+
+.copy-button {
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'time new roman', cursive;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    background-color: peru;
+    box-sizing: border-box;
+}
+
+.marquee p {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 2vw;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.tokenomics {
+
+    background-color: peru;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    /* Ensure the section spans full width */
+    box-sizing: border-box;
+}
+
+.tokenomics h2,
+.tokenomics p {
+    font-family: 'times new roman';
+    /* Use the same font as in the first section */
+}
+
+p {
+    margin: 5px 0;
+    color: #fff;
+    font-size: 1.3vw;
+    /* Use relative units */
+}
+
+.tokenomics h2 {
+    font-size: 4vw;
+}
+
+.tokenomics .description {
+    font-size: 3.2vw;
+    margin: 20px 0;
+}
+
+.tokenomics .highlight {
+    color: #8fb9ff;
+}
+
+.tokenomics-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+}
+
+.image-container img {
+    width: 30vw;
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.tokenomics-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-supply,
+.token-address {
+    background-color:peru;
+    color: #000;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    width: 30vw;
+    /* Adjust width */
+    border: 2px solid #000;
+    box-sizing: border-box;
+}
+
+.buy-button {
+    background-color: peru;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.5vw;
+    font-family: 'Bangers', cursive;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #000;
+    margin-top: 20px;
+}
+
+.buy-button:hover {
+    background-color: #cc0000;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-content {
+        width: 70%;
+        /* Adjusted for smaller screens */
+        padding: 2vw;
+    }
+    .text-content .highlight {
+        color: #8fb9ff;
+    }
+    .character {
+        order: 1;
+        height: 43vh;
+        width: auto;
+    }
+    h1 {
+        font-size: 6vw;
+        /* Use relative units */
+        margin: 0;
+        text-align: center;
+        font-family: 'time new roman';
+        /* Apply Google Font */
+        line-height: 1.5;
+        /* Line height for spacing between lines */
+        letter-spacing: 1px;
+        /* Letter spacing */
+    }
+    .contract-address span {
+        font-size: 3.8vw;
+        /* Use relative units */
+        font-family: 'Times New Roman';
+        word-break: break-all;
+        /* Ensure the address breaks into the next line if it's too long */
+    }
+    .image-container img {
+        width: 80vw;
+    }
+    p {
+        margin: 5px 0;
+        text-align: center;
+        font-size: 3.65vw;
+        /* Use relative units */
+    }
+    nav ul {
+        flex-direction: vertical;
+        align-items: center;
+    }
+    nav ul li {
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        padding: 2vw 3vw;
+        font-size: 6vw;
+    }
+    .marquee p {
+        font-size: 4vw;
+    }
+    .tokenomics h2 {
+        font-size: 10vw;
+    }
+    .tokenomics .description {
+        font-size: 7vw;
+    }
+    .total-supply,
+    .token-address {
+        width: 80vw;
+    }
+    .buy-button {
+        font-size: 4vw;
+        padding: 10px 15px;
+    }
